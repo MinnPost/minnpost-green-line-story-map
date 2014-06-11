@@ -4,7 +4,9 @@
  */
 require.config({
   shim: {
-
+    'storymap': {
+      exports: 'VCO'
+    }
   },
   baseUrl: 'js',
   paths: {
@@ -13,8 +15,7 @@ require.config({
     'text': '../bower_components/text/text',
     'jquery': '../bower_components/jquery/dist/jquery',
     'underscore': '../bower_components/underscore/underscore',
-    'storymap-orig': '../bower_components/StoryMapJS/build/js/storymap',
-    'storymap': 'storymap-shim',
+    'storymap': '../bower_components/StoryMapJS/build/js/storymap',
     'mpConfig': '../bower_components/minnpost-styles/dist/minnpost-styles.config',
     'mpStorymaps': '../bower_components/minnpost-styles/dist/minnpost-styles.storymaps',
     'minnpost-green-line-story-map': 'app'

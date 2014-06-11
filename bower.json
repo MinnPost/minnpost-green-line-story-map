@@ -20,7 +20,7 @@
     "underscore": "~1.6.0",
     "jquery": "~1.11.0",
     "minnpost-styles": "master",
-    "StoryMapJS": "https://github.com/NUKnightLab/StoryMapJS.git#ac75f4a43b28c8fb7b4f4bb1eebcd6180c7384cb"
+    "StoryMapJS": "https://github.com/zzolo/StoryMapJS.git#direct-hacks"
   },
   "dependencyMap": {
     "requirejs": {
