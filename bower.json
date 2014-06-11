@@ -19,64 +19,75 @@
     "text": "~2.0.12",
     "underscore": "~1.6.0",
     "jquery": "~1.11.0",
-    "minnpost-styles": "master"
+    "minnpost-styles": "master",
+    "StoryMapJS": "https://github.com/NUKnightLab/StoryMapJS.git#ac75f4a43b28c8fb7b4f4bb1eebcd6180c7384cb"
   },
   "dependencyMap": {
-  "requirejs": {
-    "rname": "requirejs",
-    "js": [
-      "requirejs/require"
-    ]
-  },
-  "almond": {
-    "rname": "almond",
-    "js": [
-      "almond/almond"
-    ]
-  },
-  "text": {
-    "rname": "text",
-    "js": [
-      "text/text"
-    ]
-  },
-  "jquery": {
-    "rname": "jquery",
-    "js": [
-      "jquery/dist/jquery"
-    ],
-    "returns": "$"
-  },
-  "underscore": {
-    "rname": "underscore",
-    "js": [
-      "underscore/underscore"
-    ],
-    "returns": "_"
-  },
-  "minnpost-styles": {
-    "rname": "mpStyles",
-    "css": [
-      "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css",
-      "minnpost-styles/dist/minnpost-styles"
-    ],
-    "sass": [
-      "minnpost-styles/styles/main"
-    ]
-  },
-  "mpConfig": {
-    "rname": "mpConfig",
-    "js": [
-      "minnpost-styles/dist/minnpost-styles.config"
-    ],
-    "returns": "mpConfig"
-  },
-  "mpFormatters": {
-    "rname": "mpFormatters",
-    "js": [
-      "minnpost-styles/dist/minnpost-styles.formatters"
-    ],
-    "returns": "mpFormatters"
+    "requirejs": {
+      "rname": "requirejs",
+      "js": [
+        "requirejs/require"
+      ]
+    },
+    "almond": {
+      "rname": "almond",
+      "js": [
+        "almond/almond"
+      ]
+    },
+    "text": {
+      "rname": "text",
+      "js": [
+        "text/text"
+      ]
+    },
+    "jquery": {
+      "rname": "jquery",
+      "js": [
+        "jquery/dist/jquery"
+      ],
+      "returns": "$"
+    },
+    "underscore": {
+      "rname": "underscore",
+      "js": [
+        "underscore/underscore"
+      ],
+      "returns": "_"
+    },
+    "StoryMapJS": {
+      "rname": "storymap",
+      "js": [
+        "StoryMapJS/build/js/storymap"
+      ],
+      "css": [
+        "StoryMapJS/build/css/storymap"
+      ],
+      "returns": "storymap"
+    },
+    "minnpost-styles": {
+      "rname": "mpStyles",
+      "css": [
+        "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css",
+        "minnpost-styles/dist/minnpost-styles"
+      ],
+      "sass": [
+        "minnpost-styles/styles/main"
+      ]
+    },
+    "mpConfig": {
+      "rname": "mpConfig",
+      "js": [
+        "minnpost-styles/dist/minnpost-styles.config"
+      ],
+      "returns": "mpConfig"
+    },
+    "mpStorymaps": {
+      "rname": "mpStorymaps",
+      "js": [
+        "minnpost-styles/dist/minnpost-styles.storymaps"
+      ],
+      "returns": "mpStorymaps"
+    }
   }
-}
 }

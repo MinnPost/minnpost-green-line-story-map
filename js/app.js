@@ -7,18 +7,13 @@
 
 // Create main application
 define('minnpost-green-line-story-map', [
-  'jquery', 'underscore', 'mpConfig', 'mpFormatters', 
-  'helpers',
-  
-  
+  'jquery', 'underscore', 'storymap',
+  'mpConfig', 'mpStorymaps', 'helpers',
   'text!templates/application.underscore',
-  'text!templates/loading.underscore'
+  'text!../data/story-map.json'
 ], function(
-  $, _, mpConfig, mpFormatters, 
-  helpers,
-  
-  
-  tApplication, tLoading
+  $, _, storymap, mpConfig, mpStorymaps,
+  helpers, tApplication, dStorymap
   ) {
 
   // Constructor for app
@@ -37,43 +32,34 @@ define('minnpost-green-line-story-map', [
     start: function() {
       var thisApp = this;
 
-      
       // Create main application view
-      this.$content.html(_.template(tApplication, {
+      this.$el.html(_.template(tApplication, {
         data: {
-
-        },
-        loading: _.template(tLoading, {})
+        }
       }));
-      
 
-      
-      // Run examples.  Please remove for real application.
-      //
-      // Because of how Ractive initializes and how Highcharts work
-      // there is an inconsitency of when the container for the chart
-      // is ready and when highcharts loads the chart.  So, we put a bit of
-      // of a pause.
-      //
-      // In production, intializing a chart should be tied to data which
-      // can be used with a Ractive observer.
-      //
-      // This should not happen with underscore templates.
-      _.delay(function() { thisApp.makeExamples(); }, 400);
-      
+      // To ensure template DOM is loaded, wait a moment
+      _.delay(function() {
+        thisApp.build();
+      }, 400);
     },
 
-    
-    // Make some example depending on what parts were asked for in the
-    // templating process.  Remove, rename, or alter this.
-    makeExamples: function() {
-      
+    // Build story map
+    build: function() {
+      var thisApp = this;
 
-      
+      // Replace image paths and parse JSON
+      dStorymap = dStorymap.replace(/\[\[\[IMAGE_PATH\]\]\]/g, this.options.paths.images);
+      this.data = JSON.parse(dStorymap);
 
-      
+      // Make map
+      this.sMap = mpStorymaps.makeStorymap('green-line-story-map', this.data, true);
+
+      // Get rid of loaded, once map is loaded
+      this.sMap._map.on('loaded', function() {
+        thisApp.$('.initial.loading-block').slideUp('fast');
+      });
     },
-    
 
     // Default options
     defaultOptions: {
@@ -82,7 +68,7 @@ define('minnpost-green-line-story-map', [
       el: '.minnpost-green-line-story-map-container',
       availablePaths: {
         local: {
-          
+
           css: ['.tmp/css/main.css'],
           images: 'images/',
           data: 'data/'

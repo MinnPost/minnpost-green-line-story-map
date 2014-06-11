@@ -3,26 +3,16 @@
 
   <div class="content-container">
 
-    <h3>Minnpost Green Line Story Map</h3>
+    <div class="initial loading-block"></div>
 
-    <div class="loading-block"></div>
-
-    <p>Welcome to your new MinnPost application, built from the MinnPost Templating system.  Make sure to use the <a href="http://code.minnpost.com/minnpost-styles/">MinnPost Style Guide</a> for all your styling needs.</p>
-
-    
-    
-
-    
-
-    
-    
+    <div id="green-line-story-map" class="storymap"></div>
 
   </div>
 
   <div class="footnote-container">
     <div class="footnote">
       <p>Some code, techniques, and data on <a href="https://github.com/minnpost/minnpost-green-line-story-map" target="_blank">Github</a>.</p>
-      
+
     </div>
   </div>
 </div>

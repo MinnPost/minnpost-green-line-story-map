@@ -1,0 +1,32 @@
+{
+  "storymap": {
+    "slides": [
+      {
+        "type": "overview",
+        "text": {
+          "headline": "Green line!",
+          "text": "Some stuff here."
+        }
+      },
+
+      {
+        "location": {
+          "name": "West Bank",
+          "lat": 44.97196300708834,
+          "lon": -93.24609014259524,
+          "zoom": 8,
+          "line": true
+        },
+        "text": {
+          "headline": "West Bank",
+          "text": "There’s enough to see, do, eat and drink on the West Bank to keep you busy for years, but one of my favorite uses of space in this part of the city is Acadia’s outdoor seating, in the sliver of space between its building and the Bailey Building. It’s just some tables and lights strung overhead, emptying out into the tangle of apartment stoops and stacked kayaks from next-door Midwest Mountaineering behind the buildings. This alley is also the entrance to independent radio station KFAI’s studios, which means you might get lucky enough to see your favorite host coming or going (I’m a Ron “Boogiemonster” Gerber man myself)."
+        },
+        "media": {
+          "url": "[[[IMAGE_PATH]]]01-west_bank.jpg",
+          "credit": "Andy Sturdevant",
+          "caption": "Alley between Acadia Café and Bailey Building"
+        }
+      }
+    ]
+  }
+}
