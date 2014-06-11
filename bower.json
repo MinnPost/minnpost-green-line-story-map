@@ -1,0 +1,82 @@
+{
+  "name": "minnpost-green-line-story-map",
+  "version": "0.0.0",
+  "main": "index.html",
+  "homepage": "https://github.com/minnpost/minnpost-green-line-story-map",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/minnpost/minnpost-green-line-story-map"
+  },
+  "bugs": "https://github.com/minnpost/minnpost-green-line-story-map/issues",
+  "license": "MIT",
+  "author": {
+    "name": "MinnPost",
+    "email": "data@minnpost.com"
+  },
+  "dependencies": {
+    "requirejs": "~2.1.11",
+    "almond": "~0.2.9",
+    "text": "~2.0.12",
+    "underscore": "~1.6.0",
+    "jquery": "~1.11.0",
+    "minnpost-styles": "master"
+  },
+  "dependencyMap": {
+  "requirejs": {
+    "rname": "requirejs",
+    "js": [
+      "requirejs/require"
+    ]
+  },
+  "almond": {
+    "rname": "almond",
+    "js": [
+      "almond/almond"
+    ]
+  },
+  "text": {
+    "rname": "text",
+    "js": [
+      "text/text"
+    ]
+  },
+  "jquery": {
+    "rname": "jquery",
+    "js": [
+      "jquery/dist/jquery"
+    ],
+    "returns": "$"
+  },
+  "underscore": {
+    "rname": "underscore",
+    "js": [
+      "underscore/underscore"
+    ],
+    "returns": "_"
+  },
+  "minnpost-styles": {
+    "rname": "mpStyles",
+    "css": [
+      "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css",
+      "minnpost-styles/dist/minnpost-styles"
+    ],
+    "sass": [
+      "minnpost-styles/styles/main"
+    ]
+  },
+  "mpConfig": {
+    "rname": "mpConfig",
+    "js": [
+      "minnpost-styles/dist/minnpost-styles.config"
+    ],
+    "returns": "mpConfig"
+  },
+  "mpFormatters": {
+    "rname": "mpFormatters",
+    "js": [
+      "minnpost-styles/dist/minnpost-styles.formatters"
+    ],
+    "returns": "mpFormatters"
+  }
+}
+}

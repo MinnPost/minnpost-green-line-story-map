@@ -1,0 +1,21 @@
+/**
+ * Main styles for: minnpost-green-line-story-map
+ */
+
+// This makes the unpublished background not as annoying
+body .node-unpublished {
+  background-repeat: no-repeat;
+}
+
+// Wrap everything for specificity
+.mp .minnpost-green-line-story-map-container {
+
+  .application-container {
+    padding-top: 1em;
+  }
+
+
+  // Custom breakpoints
+  @media screen and (max-width: 768px) {
+  }
+}

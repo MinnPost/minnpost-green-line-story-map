@@ -1,0 +1,33 @@
+{
+  "name": "minnpost-green-line-story-map",
+  "version": "0.0.0",
+  "homepage": "https://github.com/minnpost/minnpost-green-line-story-map",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/minnpost/minnpost-green-line-story-map"
+  },
+  "bugs": "https://github.com/minnpost/minnpost-green-line-story-map/issues",
+  "license": "MIT",
+  "author": {
+    "name": "MinnPost",
+    "email": "data@minnpost.com"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "grunt-contrib-concat": "~0.4.0",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-uglify": "~0.4.0",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-sass": "~0.7.3",
+    "grunt-contrib-connect": "~0.7.1",
+    "grunt-contrib-compass": "~0.7.2",
+    "grunt-contrib-requirejs": "~0.4.3",
+    "grunt-contrib-cssmin": "~0.9.0",
+    "grunt-gss-pull": "~0.1.2",
+    "grunt-s3": "~0.2.0-alpha.3"
+  }
+}
