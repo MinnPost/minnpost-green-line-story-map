@@ -73,10 +73,11 @@ define('minnpost-green-line-story-map', [
     makeStorymap: function(id, data, expand) {
       expand = expand || false;
       var $map = $('#' + id);
+      var wWidth = $(window).width();
       var sMap, mapOffset;
 
       // Expand container to width of window
-      if (expand) {
+      if (expand && wWidth > ($map.width() + 30)) {
         mapOffset = $map.offset();
         $map.parent().css('position', 'relative');
         $map
