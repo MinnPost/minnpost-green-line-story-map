@@ -41,7 +41,7 @@ define('minnpost-green-line-story-map', [
       // To ensure template DOM is loaded, wait a moment
       _.delay(function() {
         thisApp.build();
-      }, 400);
+      }, 800);
     },
 
     // Build story map
@@ -58,6 +58,7 @@ define('minnpost-green-line-story-map', [
       // Get rid of loaded, once map is loaded
       this.sMap._map.on('loaded', function() {
         thisApp.$('.initial.loading-block').slideUp('fast');
+        thisApp.sMap.updateDisplay();
       });
     },
 
