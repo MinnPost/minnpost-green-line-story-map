@@ -14,7 +14,7 @@
           "name": "West Bank",
           "lat": 44.97196300708834,
           "lon": -93.24609014259524,
-          "zoom": 2,
+          "zoom": 16,
           "line": true
         },
         "text": {
@@ -33,7 +33,7 @@
           "name": "East Bank",
           "lat": 44.97364898727511,
           "lon": -93.23357733433627,
-          "zoom": 2,
+          "zoom": 16,
           "line": true
         },
         "text": {
@@ -52,7 +52,7 @@
           "name": "Stadium Village",
           "lat": 44.974775,
           "lon": -93.222875,
-          "zoom": 2,
+          "zoom": 16,
           "line": true
         },
         "text": {
@@ -71,7 +71,7 @@
           "name": "Prospect Park",
           "lat": 44.971655,
           "lon": -93.215249,
-          "zoom": 2,
+          "zoom": 16,
           "line": true
         },
         "text": {
@@ -90,7 +90,7 @@
           "name": "Westgate",
           "lat": 44.967474,
           "lon": -93.206403,
-          "zoom": 2,
+          "zoom": 16,
           "line": true
         },
         "text": {
@@ -109,7 +109,7 @@
           "name": "Raymond Ave.",
           "lat": 44.963129,
           "lon": -93.195519,
-          "zoom": 2,
+          "zoom": 16,
           "line": true
         },
         "text": {
@@ -128,7 +128,7 @@
           "name": "Fairview Ave.",
           "lat": 44.95641,
           "lon": -93.178762,
-          "zoom": 2,
+          "zoom": 16,
           "line": true
         },
         "text": {
@@ -147,7 +147,7 @@
           "name": "Snelling Ave.",
           "lat": 44.955677,
           "lon": -93.166976,
-          "zoom": 2,
+          "zoom": 16,
           "line": true
         },
         "text": {
@@ -166,7 +166,7 @@
           "name": "Hamline Ave.",
           "lat": 44.955699,
           "lon": -93.156832,
-          "zoom": 2,
+          "zoom": 16,
           "line": true
         },
         "text": {

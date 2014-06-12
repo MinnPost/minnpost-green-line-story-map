@@ -29555,6 +29555,10 @@ L.Map.include({
 		    .fire('movestart')
 		    .fire('zoomstart');
 
+    if (!this._animateZoom) {
+      return false;
+    }
+
 		this._animateZoom(center, zoom, origin, scale, null, true);
 
 		return true;
