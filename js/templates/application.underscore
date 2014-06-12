@@ -11,7 +11,7 @@
 
   <div class="footnote-container">
     <div class="footnote">
-      <p>Some code, techniques, and data on <a href="https://github.com/minnpost/minnpost-green-line-story-map" target="_blank">Github</a>.</p>
+      <p>Some map data © OpenStreetMap contributors; licensed under the <a href="http://www.openstreetmap.org/copyright" target="_blank">Open Data Commons Open Database License</a>.  Some map design © MapBox; licensed according to the <a href="http://mapbox.com/tos/" target="_blank">MapBox Terms of Service</a>.  Some code, techniques, and data on <a href="https://github.com/minnpost/minnpost-green-line-story-map" target="_blank">Github</a>.</p>
 
     </div>
   </div>
