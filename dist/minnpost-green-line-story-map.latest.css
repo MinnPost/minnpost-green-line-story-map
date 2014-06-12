@@ -1,0 +1,29 @@
+/**
+ * Styles for: minnpost-green-line-story-map
+ */
+/**
+ * Variables for: minnpost-green-line-story-map
+ */
+/**
+ * Mixins for: minnpost-green-line-story-map
+ */
+/**
+ * Easily make cross brower inline block.
+ */
+/**
+ * Main styles for: minnpost-green-line-story-map
+ */
+body .node-unpublished {
+  background-repeat: no-repeat;
+}
+
+.mp .minnpost-green-line-story-map-container .application-container {
+  padding-top: 4em;
+}
+.mp .minnpost-green-line-story-map-container .storymap {
+  margin-bottom: 3em;
+  height: 40em;
+}
+.mp .minnpost-green-line-story-map-container .footnote {
+  margin-bottom: 3em;
+}
