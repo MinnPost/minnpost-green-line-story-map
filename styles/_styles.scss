@@ -46,6 +46,22 @@ body .node-unpublished {
         }
       }
     }
+
+    &.vco-layout-portrait {
+      border: 1px solid #DEDEDE;
+
+      &.vco-skinny .vco-slidenav-previous {
+        left: 9px;
+      }
+
+      &.vco-skinny .vco-slidenav-next {
+        right: 41px;
+      }
+
+      .vco-mapmarker-active {
+        color: #0D57A0;
+      }
+    }
   }
 
   .footnote {
@@ -54,6 +70,17 @@ body .node-unpublished {
 
 
   // Custom breakpoints
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 730px) {
+
+    .storymap {
+      height: 33em;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+
+    .storymap {
+      height: 25em;
+    }
   }
 }

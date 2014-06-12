@@ -56,7 +56,7 @@ define('minnpost-green-line-story-map', [
       // Make map
       this.sMap = this.makeStorymap('green-line-story-map', this.slides, true);
 
-      // Get rid of loaded, once map is loaded
+      // When map is loaded.  This seems to only happen in landscape view.  :(
       this.sMap._map.on('loaded', function() {
 
         // Add Geojson green line layer.
@@ -64,9 +64,17 @@ define('minnpost-green-line-story-map', [
         // version of Leaflet with no GeoJSON layer and the even including
         // Leaflet itself cannot get around it
 
+        // Remove loading
         thisApp.$('.initial.loading-block').slideUp('fast');
+
+        // Update display
         thisApp.sMap.updateDisplay();
       });
+
+      // Hack around portrait not trigger loading event
+      if (this.$('#green-line-story-map').width() <= 675) {
+        this.$('.initial.loading-block').slideUp('fast');
+      }
     },
 
     // Wrapper around creating a map
