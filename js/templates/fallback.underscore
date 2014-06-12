@@ -1,0 +1,22 @@
+<div class="fallback-content">
+
+  <% _.each(storymap.slides, function(s, si) { %>
+
+    <div class="slide cf <%= (s.type) ?  s.type : '' %>">
+      <% if (s.media) { %>
+        <div class="image-group">
+          <img src="<%= s.media.url %>" />
+          <div class="caption"><%= s.media.credit %></div>
+        </div>
+      <% } %>
+
+      <div class="text-group">
+        <h3><%= s.text.headline %></h3>
+
+        <%= s.text.text %>
+      </div>
+    </div>
+
+  <% }); %>
+
+</div>

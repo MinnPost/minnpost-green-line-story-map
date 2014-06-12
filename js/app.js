@@ -10,10 +10,11 @@ define('minnpost-green-line-story-map', [
   'jquery', 'underscore', 'storymap',
   'mpConfig', 'mpStorymaps', 'helpers',
   'text!templates/application.underscore',
+  'text!templates/fallback.underscore',
   'text!../data/story-map.json'
 ], function(
   $, _, storymap, mpConfig, mpStorymaps,
-  helpers, tApplication, dStorymap
+  helpers, tApplication, tFallback, dStorymap
   ) {
 
 
@@ -52,6 +53,12 @@ define('minnpost-green-line-story-map', [
       // Replace image paths and parse JSON
       dStorymap = dStorymap.replace(/\[\[\[IMAGE_PATH\]\]\]/g, this.options.paths.images);
       this.slides = JSON.parse(dStorymap);
+
+      // StoryMap comes nowhere near running in IE8 (and barely in IE9)
+      if (helpers.isMSIE() <= 8 && helpers.isMSIE() > 4) {
+        this.$('.content-container').html(_.template(tFallback, this.slides));
+        return;
+      }
 
       // Make map
       this.sMap = this.makeStorymap('green-line-story-map', this.slides, true);

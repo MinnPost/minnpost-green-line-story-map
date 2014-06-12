@@ -64,6 +64,24 @@ body .node-unpublished {
     }
   }
 
+  .fallback-content {
+
+    .slide {
+      margin-bottom: 2em;
+
+      .image-group {
+        width: 30%;
+        float: left;
+        margin: 0 1em .5em 0;
+      }
+
+      .text-group {
+        width: 60%;
+        float: left;
+      }
+    }
+  }
+
   .footnote {
     margin-bottom: 3em;
   }
