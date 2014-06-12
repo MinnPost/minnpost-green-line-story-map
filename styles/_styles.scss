@@ -17,6 +17,15 @@ body .node-unpublished {
   .storymap {
     margin-bottom: 3em;
     height: 40em;
+
+    .vco-caption {
+      text-align: right;
+    }
+
+    .leaflet-marker-icon {
+      top: -46px;
+      left: -13px;
+    }
   }
 
   .footnote {

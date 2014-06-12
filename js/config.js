@@ -16,6 +16,7 @@ require.config({
     'jquery': '../bower_components/jquery/dist/jquery',
     'underscore': '../bower_components/underscore/underscore',
     'storymap': '../bower_components/StoryMapJS/build/js/storymap',
+    'leaflet': '../bower_components/leaflet/dist/leaflet-src',
     'mpConfig': '../bower_components/minnpost-styles/dist/minnpost-styles.config',
     'mpStorymaps': '../bower_components/minnpost-styles/dist/minnpost-styles.storymaps',
     'minnpost-green-line-story-map': 'app'
