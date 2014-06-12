@@ -60,7 +60,7 @@ module.exports = function(grunt) {
       files: ['Gruntfile.js', 'js/*.js', 'data-processing/*.js']
     },
 
-    
+
     // Compass is an extended SASS.  Set it up so that it generates to .tmp/
     compass: {
       options: {
@@ -89,7 +89,7 @@ module.exports = function(grunt) {
         }
       }
     },
-    
+
 
     // Copy relevant files over to distribution
     copy: {
@@ -111,6 +111,17 @@ module.exports = function(grunt) {
             filter: 'isFile',
             src: ['**/*.json'],
             dest: 'dist/data/'
+          }
+        ]
+      },
+      storymap: {
+        files: [
+          {
+            cwd: './bower_components/StoryMapJS/build/css/icons',
+            expand: true,
+            filter: 'isFile',
+            src: ['**/*.*'],
+            dest: 'dist/icons/'
           }
         ]
       }
@@ -185,7 +196,7 @@ module.exports = function(grunt) {
       // CSS
       css: {
         src: [
-          
+
           '<%= compass.dist.options.cssDir %>/main.css'
         ],
         dest: 'dist/<%= pkg.name %>.<%= pkg.version %>.css'
@@ -306,6 +317,11 @@ module.exports = function(grunt) {
             src: 'dist/images/**/*',
             dest: 'projects/<%= pkg.name %>/images/',
             rel: 'dist/images'
+          },
+          {
+            src: 'dist/icons/**/*',
+            dest: 'projects/<%= pkg.name %>/icons/',
+            rel: 'dist/icons'
           }
         ]
       }
@@ -351,10 +367,10 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['jshint', 'compass:dist', 'clean', 'copy', 'requirejs', 'concat', 'cssmin', 'uglify']);
 
   // Watch tasks
-  
+
   grunt.registerTask('watcher', ['jshint', 'compass:dev']);
   grunt.registerTask('server', ['jshint', 'compass:dev', 'connect', 'watch']);
-  
+
 
   // Deploy tasks
   grunt.registerTask('deploy', ['s3', 'inline_embed:minnpost-green-line-story-map']);
