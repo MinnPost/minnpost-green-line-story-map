@@ -26,6 +26,26 @@ body .node-unpublished {
       top: -46px;
       left: -13px;
     }
+
+
+    &.vco-layout-landscape {
+
+      .vco-menubar {
+        z-index: 2000;
+      }
+
+      .vco-storyslider {
+        z-index: 1000;
+
+        .vco-slider-background {
+          background-image: none;
+          background-color: #FFFFFF;
+          background-color: rgba(255, 255, 255, 0.9);
+
+          @include box-shadow(-1px 0px 17px 0px rgba(0, 0, 0, 0.65));
+        }
+      }
+    }
   }
 
   .footnote {
