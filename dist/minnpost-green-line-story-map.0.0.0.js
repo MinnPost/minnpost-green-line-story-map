@@ -203,10 +203,14 @@ define('minnpost-green-line-story-map', [
         thisApp.sMap.updateDisplay();
       });
 
-      // Hack around portrait not trigger loading event
+      // Hack around portrait not trigger loading event, and it turns out
+      // even portait can be trigger on bigger screens
       if (this.$('#green-line-story-map').width() <= 675) {
         this.$('.initial.loading-block').slideUp('fast');
       }
+      _.delay(function() {
+        thisApp.$('.initial.loading-block').slideUp('fast');
+      }, 1500);
     },
 
     // Wrapper around creating a map
@@ -240,7 +244,7 @@ define('minnpost-green-line-story-map', [
         line_dash: '5,5',
         show_lines: true,
         show_history_line: true,
-        calculate_zoom: false
+        calculate_zoom: (this.$('#green-line-story-map').width() <= 675)
         //slide_padding_lr: 20,
         //layout: 'landscape',
         //width: '100%'
