@@ -1,22 +1,17 @@
 # Minnpost Green Line Story Map
 
-A look at various stops on the new Green Line that connects Minneapolis and St. Paul.
+Strolling the sights of the Green Line with Andy Sturdevant. Uses [Story Map](http://storymap.knightlab.com/).
 
-You can see this project in action at *published story link goes here*.
+You can see this project in action at [Hockey, hip-hop, and other Green Line highlights](http://www.minnpost.com/stroll/2014/06/hockey-hip-hop-and-other-green-line-highlights).
 
 *Unless otherwise noted, MinnPost projects on [Github](https://github.com/minnpost) are story-driven and meant for transparency sake and not focused on re-use.  For a list of our more reusable projects, go to [code.minnpost.com](http://code.minnpost.com).*
 
 ## Data
 
-*Describe the data sources here.  Use links and URLs to show where the data came from.  Put small sized originals or modified data sources in the ```data``` folder*
+*All data (text, locations) is in ```data/story-map.json```. Written by Andy Sturdevant.*
 
 *For larger data sources that may need to be processed, provide instructions on how to download.  For instance:  ```cd data && wget blah.txt```.  Also, make sure to put an entry in the ```.gitignore```.*
 
-## Data processing
-
-The following describes how the data was processed and is not necessarily needed to run or install the application, but more included for reference, transparency, and development.
-
-*Describe data processing here, include commands, or document any manual steps taken.  Put data processing scripts or configurations in the ```data-processing``` folder.*
 
 ## Development and running locally
 
@@ -91,11 +86,6 @@ Adding libraries is not difficult, but there are a few steps.
 }
 ```
 
-
-### Testing
-
-Unfortunately there are no tests at the moment.
-
 ### Build
 
 To build or compile all the assets together for easy and efficient deployment, do the following.  It will create all the files in the `dist/` folder.
@@ -117,7 +107,7 @@ There are to main ways to include the necessary HTML in a page in order to run t
 
 ## Hacks
 
-*List any hacks used in this project, such as forked repos.  Link to pull request or repo and issue.*
+*Hacks were used -- description to come.*
 
 ## About Us
 
