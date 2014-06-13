@@ -8,9 +8,7 @@ You can see this project in action at [Hockey, hip-hop, and other Green Line hig
 
 ## Data
 
-*All data (text, locations) is in ```data/story-map.json```. Written by Andy Sturdevant.*
-
-*For larger data sources that may need to be processed, provide instructions on how to download.  For instance:  ```cd data && wget blah.txt```.  Also, make sure to put an entry in the ```.gitignore```.*
+All data (text, locations) is in ```data/story-map.json```. Written by Andy Sturdevant.
 
 
 ## Development and running locally
@@ -25,11 +23,9 @@ All commands are assumed to be on the [command line](http://en.wikipedia.org/wik
    * On a Mac, do: `brew install node`
 1. Optionally, for development, install [Grunt](http://gruntjs.com/): `npm install -g grunt-cli`
 1. Install [Bower](http://bower.io/): `npm install -g bower`
-
-
 1. Install [Sass](http://sass-lang.com/): `gem install sass`
    * On a Mac do: `sudo gem install sass`
-   1. Install [Compass](http://compass-style.org/): `gem install compass`
+1. Install [Compass](http://compass-style.org/): `gem install compass`
    * On a Mac do: `sudo gem install compass`
 
 
@@ -41,9 +37,6 @@ Get the code for this project and install the necessary dependency libraries and
 1. Go into the template directory: `cd minnpost-green-line-story-map`
 1. Install NodeJS packages: `npm install`
 1. Install Bower components: `bower install`
-
-
-
 
 
 ### Running locally
@@ -107,7 +100,8 @@ There are to main ways to include the necessary HTML in a page in order to run t
 
 ## Hacks
 
-*Hacks were used -- description to come.*
+SToryMap, still in beta needed some fixes to work properly with RequireJS and needed some cross-browser fixes.  Unfortunately, understanding how StoryMap is built, a pull reuqest could not be made at this time.  Hacked fork is here:
+https://github.com/zzolo/StoryMapJS/tree/direct-hacks
 
 ## About Us
 
