@@ -1,4 +1,4 @@
-# Minnpost Green Line Story Map
+# Minnpost Green Line Story Map (Part I)
 
 Strolling the sights of the Green Line with Andy Sturdevant. Uses [Story Map](http://storymap.knightlab.com/).
 
@@ -8,8 +8,7 @@ You can see this project in action at [Hockey, hip-hop, and other Green Line hig
 
 ## Data
 
-All data (text, locations) is in ```data/story-map.json```. Written by Andy Sturdevant.
-
+All data (text, locations) is in ```data/story-map.json```.  Written by Andy Sturdevant.
 
 ## Development and running locally
 
@@ -28,7 +27,6 @@ All commands are assumed to be on the [command line](http://en.wikipedia.org/wik
 1. Install [Compass](http://compass-style.org/): `gem install compass`
    * On a Mac do: `sudo gem install compass`
 
-
 ### Get code and install packages
 
 Get the code for this project and install the necessary dependency libraries and packages.
@@ -37,7 +35,6 @@ Get the code for this project and install the necessary dependency libraries and
 1. Go into the template directory: `cd minnpost-green-line-story-map`
 1. Install NodeJS packages: `npm install`
 1. Install Bower components: `bower install`
-
 
 ### Running locally
 
@@ -100,7 +97,7 @@ There are to main ways to include the necessary HTML in a page in order to run t
 
 ## Hacks
 
-SToryMap, still in beta needed some fixes to work properly with RequireJS and needed some cross-browser fixes.  Unfortunately, understanding how StoryMap is built, a pull reuqest could not be made at this time.  Hacked fork is here:
+StoryMap, still in beta needed some fixes to work properly with RequireJS and needed some cross-browser fixes.  Unfortunately, understanding how StoryMap is built, a pull request could not be made at this time.  Hacked fork is here:
 https://github.com/zzolo/StoryMapJS/tree/direct-hacks
 
 ## About Us
